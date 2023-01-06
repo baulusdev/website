@@ -26,18 +26,20 @@
             /*overflow: auto; */
             background-color: #1c1c1c;
             scroll-behavior: smooth;
+            align-content: center;
         }
         h2 {
-            font-family: taller;
+            text-align: center;
             color: #bdc0c2;
+            font-family: taller;
             font-size: 30vh;
         }
 
         p {
+            text-align: center;
             color: #bdc0c2;
             font-family: texgyreadventor;
             font-size: 5vh;
-            letter-spacing: 0.0em;
         }
 
         section {
@@ -45,21 +47,40 @@
             scroll-snap-type: proximity;
 
         }
+
+
+        div {
+            position: absolute;
+            display: flex;
+            gap: 20%;
+            align-content: center;
+            justify-content: center;
+        }
+
     </style>
 </head>
 <body>
-    <center>
         <section>
         <h2>Hello, I am baulus</h2> 
         </section>
         <section>
             <p>Links:</p>
-            <img src="" alt="">
+            <div>
+                <a href="https://github.com/baulusdev"><img src="assets/github-logo.png" alt="yo" width="50px" height="50px"></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="assets/discord.png" alt="discordpng" width="50px" height="50px"></a>
+                <a href="https://twitter.com/baulusttv"><img src="assets/twitter.png" alt="twitterpng" width="50px" height="50px"></a>
+            </div>
 
         </section>
         <section>
             <p>Projects</p>
         </section>
-    </center>
+        <section>
+            <p>People</p>
+            <div>
+                <a href="https://pipeman.org/"><img src="assets/pipeman.png" alt="pipemanpng" width="50px" height="50px"></a>
+                <a href="https://snaens.net/"><img src="assets/shit.png" alt="snaenspng" width="50px" height="50px"></a>
+            </div>
+        </section>
 </body>
 </html>
