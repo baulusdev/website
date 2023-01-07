@@ -25,9 +25,8 @@
 
             /*overflow: auto; */
             background-color: #1c1c1c;
-            scroll-behavior: smooth;
-            align-content: center;
-        }
+            }
+
         h2 {
             text-align: center;
             color: #bdc0c2;
@@ -44,19 +43,21 @@
 
         section {
             height: 100vh;
-            scroll-snap-type: proximity;
+            width: 100%;
 
         }
 
-
-        div {
-            position: absolute;
+        .icon-lines {
             display: flex;
-            gap: 20%;
-            align-content: center;
+            gap: 1%;
             justify-content: center;
+            align-items: center;
+            margin: auto;
         }
 
+        .icon:hover {
+            size: 110%;
+        }
     </style>
 </head>
 <body>
@@ -65,8 +66,8 @@
         </section>
         <section>
             <p>Links:</p>
-            <div>
-                <a href="https://github.com/baulusdev"><img src="assets/github-logo.png" alt="yo" width="50px" height="50px"></a>
+            <div class="icon-lines">
+                <a class="icon" href="https://github.com/baulusdev"><img src="assets/github-logo.png" alt="yo" width="50px" height="50px"></a>
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="assets/discord.png" alt="discordpng" width="50px" height="50px"></a>
                 <a href="https://twitter.com/baulusttv"><img src="assets/twitter.png" alt="twitterpng" width="50px" height="50px"></a>
             </div>
@@ -77,9 +78,9 @@
         </section>
         <section>
             <p>People</p>
-            <div>
+            <div class="icon-lines">
                 <a href="https://pipeman.org/"><img src="assets/pipeman.png" alt="pipemanpng" width="50px" height="50px"></a>
-                <a href="https://snaens.net/"><img src="assets/shit.png" alt="snaenspng" width="50px" height="50px"></a>
+                <a href="https://snaens.net/"><img style="border-radius: 30px" src="assets/sam.PNG" alt="snaenspng" width="50px" height="50px"></a>
             </div>
         </section>
 </body>
