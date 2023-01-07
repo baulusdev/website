@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>baulus website</title>
     <style>
+
         @font-face {
         font-family: brandon-grotesque;
         src: url(fonts/brandon-grotesque-bold-italic-58a8a48221563.otf);
@@ -32,6 +33,7 @@
             color: #bdc0c2;
             font-family: taller;
             font-size: 30vh;
+            margin-bottom: 0%;
         }
 
         p {
@@ -44,43 +46,70 @@
         section {
             height: 100vh;
             width: 100%;
+            scroll-snap-type: y proximity;
 
+        }       
+
+        .subtitle {
+        margin-left: 10%;
+        margin-right: 10%;
+        color: #bdc0c2;
+        font-size: 2rem;
+        font-weight: 400;
+        opacity: 0;
+        transform: translateY(3rem);
+        animation: fadeInUp 2s ease forwards;
         }
+
+        @keyframes fadeInUp {
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }
+        }
+
+
+
 
         .icon-lines {
             display: flex;
-            gap: 1%;
+            gap: 4%;
             justify-content: center;
             align-items: center;
             margin: auto;
+            /*not selectable*/
+            -webkit-user-select: none;  /* Chrome all / Safari all */
+            -moz-user-select: none;     /* Firefox all */
+            -ms-user-select: none;      /* IE 10+ */
+            user-select: none;  
         }
 
-        .icon:hover {
-            size: 110%;
-        }
+
     </style>
 </head>
 <body>
         <section>
-        <h2>Hello, I am baulus</h2> 
+            <h2 class="typewriter">Hello, I am baulus</h2> 
+            <p class="subtitle">I am a rather skilled programmer and from <a href="https://www.openstreetmap.org/relation/2145268">Bavaria, Germany</a> interested in Linux and electronics.</p>
+            <p>THIS PAGE IS NOT YET FINISHED</p>
         </section>
         <section>
-            <p>Links:</p>
+            <p>- Links -</p>
             <div class="icon-lines">
-                <a class="icon" href="https://github.com/baulusdev"><img src="assets/github-logo.png" alt="yo" width="50px" height="50px"></a>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="assets/discord.png" alt="discordpng" width="50px" height="50px"></a>
-                <a href="https://twitter.com/baulusttv"><img src="assets/twitter.png" alt="twitterpng" width="50px" height="50px"></a>
+                <a class="icon" href="https://github.com/baulusdev"><img src="assets/github.png" alt="githubpng" width="100px" height="100px"></a>
+                <a class="icon" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="assets/discord.png" alt="discordpng" width="100px" height="100px"></a>
+                <a class="icon" href="https://twitter.com/baulusttv"><img src="assets/twitter.png" alt="twitterpng" width="100px" height="100px"></a>
             </div>
 
         </section>
         <section>
-            <p>Projects</p>
+            <p>- Projects -</p>
         </section>
         <section>
-            <p>People</p>
+            <p>- People -</p>
             <div class="icon-lines">
-                <a href="https://pipeman.org/"><img src="assets/pipeman.png" alt="pipemanpng" width="50px" height="50px"></a>
-                <a href="https://snaens.net/"><img style="border-radius: 30px" src="assets/sam.PNG" alt="snaenspng" width="50px" height="50px"></a>
+                <a href="https://pipeman.org/"><img src="assets/pipeman.png" alt="pipemanpng" width="100px" height="100px"></a>
+                <a href="https://snaens.net/"><img style="border-radius: 100px" src="assets/sam.PNG" alt="snaenspng" width="100px" height="100px"></a>
             </div>
         </section>
 </body>
