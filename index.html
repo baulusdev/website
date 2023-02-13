@@ -52,7 +52,7 @@
             width: 100%;
             scroll-snap-type: y proximity;
 
-        }       
+        }
 
         .subtitle {
         margin-left: 0%;
@@ -87,6 +87,12 @@
             -ms-user-select: none;      /* IE 10+ */
             user-select: none;  
         }
+
+        .vertretungsplan {
+            justify-content: center;
+            display: flex;
+            gap: 30px;
+        }
     </style>
 </head>
 <body>
@@ -110,6 +116,9 @@
         </section>
         <section id="3">
             <p>- Projects -</p>
+            <div class="vertretungsplan">
+                <img style="border-radius: 20px; object-fit: cover;" src="https://pipeman.org/vertretungsplan/api/plans/today?format=png" alt="" width="600p" height="800px"><img style="border-radius: 20px; object-fit: cover;" src="https://pipeman.org/vertretungsplan/api/plans/tomorrow?format=png" alt="" width="600px" height="800px">
+            </div>
         </section>
         <section id="4">
             <p>- People -</p>
