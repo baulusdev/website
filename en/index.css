@@ -92,7 +92,7 @@ html {
     --retro-texxt-link: #D85251;
     --retro-text-divider: #E4DBD2;
 
-    
+
 
     
 }
@@ -101,6 +101,7 @@ body {
     margin: 0px;
     display: grid;
     place-content: center;
+    background-color: var(--light-bg-main);
 }
 
 kbd {
@@ -125,7 +126,34 @@ header {
     display: grid;
     top: 0px;
     margin: 0px;
-    max-width: 1000px;
+    width: 800px;
+    height: 100px;
+    z-index: 1;
+    background-color: var(--light-bg-main);
+    filter: blur(0px);
+}
+
+header > nav {
+    justify-self: start;
+    align-self: start;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    list-style-type: none;
+
+}
+
+.header-logo {
+    width: 1.2rem;
+    height: 1.2rem;
 }
 
 h1 {
@@ -133,8 +161,8 @@ h1 {
 }
 
 .color-switch-holder {
+    align-self: end;
     margin: 10px;
-    justify-self: end;
     display: flex;
     gap: 15px;
 }
