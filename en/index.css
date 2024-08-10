@@ -1,0 +1,179 @@
+@font-face {
+    font-family: brandon-grotesque-italic;
+    src: url(/static/brandon-grotesque-medium-italic.otf);
+}
+
+
+* {
+    
+}
+
+html {
+    font-family: monospace;
+    font-size: 1.5rem;
+
+    /* colors */
+
+    /* light */
+    --light-bg-main: #FFFFFF;
+    --light-bg-secondary: #F3F4F6;
+    --light-bg-tertiary: #EDEFF2;
+
+    --light-text-main: #202122;
+    --light-text-secondary: #636C7E;
+    --light-text-dim: #B0B6C1;
+    --light-text-link: #5F96CD;
+    --light-text-divider: #D3D5D9;
+
+    /* paper */
+    --paper-bg-main: #F8F0E5;
+    --paper-bg-tertiary: #EBDAC4;
+    --paper-bg-secondary: #F4E8D7;
+
+    --paper-text-main: #202122;
+    --paper-text-secondary: #7E6D56;
+    --paper-text-dim: #BDAD96;
+    --paper-text-link: #5F96CD;
+    --paper-text-divider: #D1C0AA;
+
+
+    /* dark */
+    --dark-bg-main: #191A1A;
+    --dark-bg-secondary: #222222;
+    --dark-bg-tertiary: #303030;
+
+    --dark-text-main: #D9D9D9;
+    --dark-text-secondary: #AEAEAE;
+    --dark-text-dim: #8A8A8A;
+    --dark-text-link: #5F96CD;
+    --dark-text-divider: #515151;
+
+    /* black */
+    --black-bg-main: #000000;
+    --black-bg-secondary: #141414;
+    --black-bg-tertiary: #2A2A2A;
+
+    --black-text-main: #B5B5B5;
+    --black-text-secondary: #D9D9D9;
+    --black-text-dim: #929292;
+    --black-text-link: #F9C84B;
+    --black-text-divider: #383838;
+
+    /* moon */
+    --moon-bg-main: #282B38;
+    --moon-bg-secondary: #343746;
+    --moon-bg-tertiary: #3E4254;
+
+    --moon-text-main: #D9D9D9;
+    --moon-text-secondary: #BDC0CF;
+    --moon-text-dim: #818698;
+    --moon-text-link: #7B9BBA;
+    --moon-text-divider: #51576E;
+
+    /* sam */
+    --sam-bg-main: #1B1337;
+    --sam-bg-secondary: #F3CE4B;
+    --sam-bg-tertiary: #3A2743;
+
+    --sam-text-main: #E1E0DA;
+    --sam-text-secondary: #F3CE4B;
+    --sam-text-dim: #9E9E9E;
+    --sam-text-link: #D75EBC;
+    --sam-text-divider: #3B3161;
+
+    /* retro */
+    --retro-bg-main: #F6F1E9;
+    --retro-bg-secondary: #F3E7DE;
+    --terto-bg-tertiary: #D5C9E8;
+
+    --retro-text-main: #2C2C2C;
+    --retro-text-secondary: #AE794B;
+    --retro-text-dim: #AFA9A5;
+    --retro-texxt-link: #D85251;
+    --retro-text-divider: #E4DBD2;
+
+    
+
+    
+}
+
+body {
+    margin: 0px;
+    display: grid;
+    place-content: center;
+}
+
+kbd {
+    background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.2),
+    0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+  color: #333;
+  display: inline-block;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1;
+  padding: 2px 4px;
+  white-space: nowrap;
+}
+
+header {
+    
+    position: sticky;
+    display: grid;
+    top: 0px;
+    margin: 0px;
+    max-width: 1000px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.color-switch-holder {
+    margin: 10px;
+    justify-self: end;
+    display: flex;
+    gap: 15px;
+}
+
+.color-switcher {
+    border: 3px solid black;
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    padding: 2px;
+    
+}
+
+.dark {
+    background-color: #333;
+}
+
+.light {
+    color: #eee;
+}
+
+.reader {
+
+}
+
+.content-holder {
+    display: grid;
+    justify-content: center;
+}
+
+.content {
+    display: grid;
+    max-width: 800px;
+    
+}
+
+.intro {
+    justify-self: start;
+}
+
+
+
