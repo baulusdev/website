@@ -5,7 +5,7 @@
 
 
 * {
-    
+    scroll-behavior: smooth;
 }
 
 html {
@@ -15,6 +15,7 @@ html {
     /* colors */
 
     /* light */
+    --light-preview: #FFFFFF; 
     --light-bg-main: #FFFFFF;
     --light-bg-secondary: #F3F4F6;
     --light-bg-tertiary: #EDEFF2;
@@ -23,9 +24,11 @@ html {
     --light-text-secondary: #636C7E;
     --light-text-dim: #B0B6C1;
     --light-text-link: #5F96CD;
+    --light-text-link-hover: #39597a;
     --light-text-divider: #D3D5D9;
 
     /* paper */
+    --paper-preview: #F8F0E5;
     --paper-bg-main: #F8F0E5;
     --paper-bg-tertiary: #EBDAC4;
     --paper-bg-secondary: #F4E8D7;
@@ -38,6 +41,7 @@ html {
 
 
     /* dark */
+    --dark-preview: #191A1A;
     --dark-bg-main: #191A1A;
     --dark-bg-secondary: #222222;
     --dark-bg-tertiary: #303030;
@@ -49,6 +53,7 @@ html {
     --dark-text-divider: #515151;
 
     /* black */
+    --black-preview: #000000;
     --black-bg-main: #000000;
     --black-bg-secondary: #141414;
     --black-bg-tertiary: #2A2A2A;
@@ -60,6 +65,7 @@ html {
     --black-text-divider: #383838;
 
     /* moon */
+    --moon-preview: #3E4254;
     --moon-bg-main: #282B38;
     --moon-bg-secondary: #343746;
     --moon-bg-tertiary: #3E4254;
@@ -71,6 +77,7 @@ html {
     --moon-text-divider: #51576E;
 
     /* sam */
+    --sam-preview: #F3CE4B;
     --sam-bg-main: #1B1337;
     --sam-bg-secondary: #F3CE4B;
     --sam-bg-tertiary: #3A2743;
@@ -82,6 +89,7 @@ html {
     --sam-text-divider: #3B3161;
 
     /* retro */
+    --retro-preview: #D85251;
     --retro-bg-main: #F6F1E9;
     --retro-bg-secondary: #F3E7DE;
     --terto-bg-tertiary: #D5C9E8;
@@ -89,7 +97,7 @@ html {
     --retro-text-main: #2C2C2C;
     --retro-text-secondary: #AE794B;
     --retro-text-dim: #AFA9A5;
-    --retro-texxt-link: #D85251;
+    --retro-text-link: #D85251;
     --retro-text-divider: #E4DBD2;
 
 
@@ -97,38 +105,142 @@ html {
     
 }
 
+/* themeing */
+
+[data-theme="light"]{
+    --bg-main: #FFFFFF;
+    --bg-secondary: #F3F4F6;
+    --bg-tertiary: #EDEFF2;
+
+    --text-main: #202122;
+    --text-secondary: #636C7E;
+    --text-dim: #B0B6C1;
+    --text-link: #5F96CD;
+    --text-link-hover: #39597a;
+    --text-divider: #D3D5D9;
+
+}
+
+[data-theme="dark"]{
+    --bg-main: #191A1A;
+    --bg-secondary: #222222;
+    --bg-tertiary: #303030;
+
+    --text-main: #D9D9D9;
+    --text-secondary: #AEAEAE;
+    --text-dim: #8A8A8A;
+    --text-link: #5F96CD;
+    --text-divider: #515151;
+
+}
+
+[data-theme="paper"]{
+    --bg-main: #F8F0E5;
+    --bg-tertiary: #EBDAC4;
+    --bg-secondary: #F4E8D7;
+
+    --text-main: #202122;
+    --text-secondary: #7E6D56;
+    --text-dim: #BDAD96;
+    --text-link: #5F96CD;
+    --text-divider: #D1C0AA;
+
+}
+
+[data-theme="black"]{
+    --bg-main: #000000;
+    --bg-secondary: #141414;
+    --bg-tertiary: #2A2A2A;
+
+    --text-main: #B5B5B5;
+    --text-secondary: #D9D9D9;
+    --text-dim: #929292;
+    --text-link: #F9C84B;
+    --text-divider: #383838;
+
+}
+
+[data-theme="moon"]{
+    --bg-main: #282B38;
+    --bg-secondary: #343746;
+    --bg-tertiary: #3E4254;
+
+    --text-main: #D9D9D9;
+    --text-secondary: #BDC0CF;
+    --text-dim: #818698;
+    --text-link: #7B9BBA;
+    --text-divider: #51576E;
+
+}
+
+[data-theme="sam"]{
+    --bg-main: #1B1337;
+    --bg-secondary: #F3CE4B;
+    --bg-tertiary: #3A2743;
+
+    --text-main: #E1E0DA;
+    --text-secondary: #F3CE4B;
+    --text-dim: #9E9E9E;
+    --text-link: #D75EBC;
+    --text-divider: #3B3161;
+
+}
+
+[data-theme="retro"]{
+    --bg-main: #F6F1E9;
+    --bg-secondary: #F3E7DE;
+    --bg-tertiary: #D5C9E8;
+
+    --text-main: #2C2C2C;
+    --text-secondary: #AE794B;
+    --text-dim: #AFA9A5;
+    --text-link: #D85251;
+    --text-divider: #E4DBD2;
+
+}
+
+*:has(.dim) {
+
+}
+
+
 body {
     margin: 0px;
     display: grid;
     place-content: center;
-    background-color: var(--light-bg-main);
+    background-color: var(--bg-main);
 }
 
-kbd {
-    background-color: #eee;
-  border-radius: 3px;
-  border: 1px solid #b4b4b4;
-  box-shadow:
-    0 1px 1px rgba(0, 0, 0, 0.2),
-    0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
-  color: #333;
-  display: inline-block;
-  font-size: 0.85em;
-  font-weight: 700;
-  line-height: 1;
-  padding: 2px 4px;
-  white-space: nowrap;
+body[class="bg-secondary"]{
+    background-color: var(--bg-secondary);
 }
 
-
-a {
-    text-decoration: none;
-    color: var(--light-text-link);
+body[class="bg-tertiary"]{
+    background-color: var(--bg-tertiary);
 }
 
 p {
-    color: var(--light-text-main);
+    color: var(--text-main);
 }
+
+p[class="text-secondary"]{
+    color: var(--text-secondary);
+}
+
+p[class="text-dim"]{
+    color: var(--text-dim);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-link);
+}
+
+a:hover {
+    color: var(--text-link-hover);
+}
+
+
 
 header {
     
@@ -137,9 +249,9 @@ header {
     top: 0px;
     margin: 0px;
     width: 800px;
-    height: 100px;
+    /*height: 100px;*/
     z-index: 1;
-    background-color: var(--light-bg-main);
+    background-color: var(--bg-main);
     filter: blur(0px);
     grid-template-columns: auto auto;
 
@@ -160,20 +272,21 @@ header ul {
     padding: 0;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     list-style-type: none;
 
 }
 
 header img {
     display: inline-block;
-    width: 1rem;
-    height: 1rem;
+    width: 0.7rem;
+    height: 0.7rem;
     margin: 0;
 }
 
 h1 {
     font-weight: bold;
+    color: var(--text-main);
 }
 
 .color-switch-holder {
@@ -184,25 +297,32 @@ h1 {
     gap: 15px;
 }
 
-.color-switcher {
-    border: 3px solid black;
-    width: 15px;
-    height: 15px;
-    border-radius: 100px;
-    padding: 2px;
-    
+#dark {
+    accent-color: var(--dark-preview);
 }
 
-.dark {
-    background-color: #333;
+#black {
+    accent-color: var(--black-preview);
 }
 
-.light {
-    color: #eee;
+#light {
+    accent-color: var(--light-preview);
 }
 
-.reader {
+#paper {
+    accent-color: var(--paper-preview);
+}
 
+#moon {
+    accent-color: var(--moon-preview);
+}
+
+#sam {
+    accent-color: var(--sam-preview);
+}
+
+#retro {
+    accent-color: var(--retro-preview)
 }
 
 .content-holder {

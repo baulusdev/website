@@ -6,6 +6,7 @@
     <title>Luis's Website</title>
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="/static/favicon.png" type="image/x-icon">
+    <script defer src="index.js"></script>
 </head>
 <body>
     <header>
@@ -34,29 +35,19 @@
                 </li>
             </ul>
         </nav>
+        <!--TODO: Als Radio buttons-->
+        
         <div class="color-switch-holder">
-            <div class="color-switcher black">
+                <abbr title="Dark Theme"><input class="color-radio" type="radio" name="Dark Theme" id="dark" value="dark"></abbr>
+                <abbr title="Light Theme"><input class="color-radio" type="radio" name="Dark Theme" id="light" value="light"></abbr>
+                <abbr title="Paper Theme"><input class="color-radio" type="radio" name="Dark Theme" id="paper" value="paper"></abbr>            
+                <abbr title="Black Theme (OLED Display)"><input class="color-radio" type="radio" name="Dark Theme" id="black" value="black"></abbr>
+                <abbr title="Moon Theme"><input class="color-radio" type="radio" name="Dark Theme" id="moon" value="moon"></abbr>
+                <abbr title="Sam Theme"><input class="color-radio" type="radio" name="Dark Theme" id="sam" value="sam"></abbr>
+                <abbr title="Retro Theme"><input class="color-radio" type="radio" name="Dark Theme" id="retro" value="retro"></abbr>
+            
 
-            </div>
-            <div class="color-switcher dark">
-    
-            </div>
-            <div class="color-switcher light">
-    
-            </div>
-            <div class="color-switcher paper">
-    
-            </div>
-
-            <div class="color-switcher sam">
-
-            </div>
-            <div class="color-switcher moon">
-
-            </div>
-            <div class="color-switcher retro">
-
-            </div>
+            
         </div>
     </header>
     
