@@ -380,6 +380,8 @@ p {
     justify-self: start;
 }
 
+
+
 @media screen and (max-width: 900px){
 
     * {
@@ -406,30 +408,16 @@ p {
 
 @media screen and (max-width: 700px) {
     
-    #paper {
-        display: none;
-    }
-
-    #black {
-        display: none;
-    }
-
-    #moon {
-        display: none;
-    }
-
-    #sam {
-        display: none;
-    }
-
-    #retro {
-        display: none;
-    }
-
-}
-
-@media screen and (max-width: 500px) {
     .color-switch-holder {
         display: none;
     }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
 }

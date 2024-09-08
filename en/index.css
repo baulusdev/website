@@ -314,9 +314,8 @@ header svg {
     margin: 0;
 }
 
-h1 {
-    font-weight: bold;
-    color: var(--text-main);
+.color-switcher-link {
+    display: none;
 }
 
 .color-switch-holder {
@@ -356,8 +355,14 @@ h1 {
     accent-color: var(--retro-preview)
 }
 
+h1 {
+    font-weight: bold;
+    color: var(--text-main);
+}
+
+
 p {
-    line-height: 2.5;
+    line-height: 1.5;
 }
 
 .content-holder {
@@ -380,6 +385,22 @@ p {
     justify-self: start;
 }
 
+.pre-footer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    place-content: center;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 @media screen and (max-width: 900px){
 
     * {
@@ -399,37 +420,36 @@ p {
         height: 2px;
     }
 
-    /** {
+    /*
+    * {
         display: none;
-    }*/
+    }
+        */
 }
 
 @media screen and (max-width: 700px) {
     
-    #paper {
-        display: none;
-    }
-
-    #black {
-        display: none;
-    }
-
-    #moon {
-        display: none;
-    }
-
-    #sam {
-        display: none;
-    }
-
-    #retro {
-        display: none;
-    }
-
-}
-
-@media screen and (max-width: 500px) {
     .color-switch-holder {
         display: none;
     }
+
+    .color-switch-holder-2 {
+        display: flex;
+    }
+
+    .color-switcher-link {
+        display: block;
+    }
+    
+
+    
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+
+
+
 }
