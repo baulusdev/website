@@ -1,0 +1,499 @@
+@font-face {
+    font-family: brandon-grotesque-italic;
+    src: url(/static/brandon-grotesque-medium-italic.otf);
+}
+
+
+* {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: monospace;
+    font-size: 1.5rem;
+
+    /* colors */
+
+    
+    /* light */
+    --light-preview: #FFFFFF; 
+    --light-bg-main: #FFFFFF;
+    --light-bg-secondary: #F3F4F6;
+    --light-bg-tertiary: #EDEFF2;
+
+    --light-text-main: #202122;
+    --light-text-secondary: #636C7E;
+    --light-text-dim: #B0B6C1;
+    --light-text-link: #5F96CD;
+    --light-text-link-hover: #39597a;
+    --light-text-divider: #D3D5D9;
+
+    /* paper */
+    --paper-preview: #F8F0E5;
+    --paper-bg-main: #F8F0E5;
+    --paper-bg-tertiary: #EBDAC4;
+    --paper-bg-secondary: #F4E8D7;
+
+    --paper-text-main: #202122;
+    --paper-text-secondary: #7E6D56;
+    --paper-text-dim: #BDAD96;
+    --paper-text-link: #5F96CD;
+    --paper-text-divider: #D1C0AA;
+
+
+    /* dark */
+    --dark-preview: #191A1A;
+    --dark-bg-main: #191A1A;
+    --dark-bg-secondary: #222222;
+    --dark-bg-tertiary: #303030;
+
+    --dark-text-main: #D9D9D9;
+    --dark-text-secondary: #AEAEAE;
+    --dark-text-dim: #8A8A8A;
+    --dark-text-link: #5F96CD;
+    --dark-text-divider: #515151;
+
+    /* black */
+    --black-preview: #000000;
+    --black-bg-main: #000000;
+    --black-bg-secondary: #141414;
+    --black-bg-tertiary: #2A2A2A;
+
+    --black-text-main: #B5B5B5;
+    --black-text-secondary: #D9D9D9;
+    --black-text-dim: #929292;
+    --black-text-link: #F9C84B;
+    --black-text-divider: #383838;
+
+    /* moon */
+    --moon-preview: #3E4254;
+    --moon-bg-main: #282B38;
+    --moon-bg-secondary: #343746;
+    --moon-bg-tertiary: #3E4254;
+
+    --moon-text-main: #D9D9D9;
+    --moon-text-secondary: #BDC0CF;
+    --moon-text-dim: #818698;
+    --moon-text-link: #7B9BBA;
+    --moon-text-divider: #51576E;
+
+    /* sam */
+    --sam-preview: #F3CE4B;
+    --sam-bg-main: #1B1337;
+    --sam-bg-secondary: #F3CE4B;
+    --sam-bg-tertiary: #3A2743;
+
+    --sam-text-main: #E1E0DA;
+    --sam-text-secondary: #F3CE4B;
+    --sam-text-dim: #9E9E9E;
+    --sam-text-link: #D75EBC;
+    --sam-text-divider: #3B3161;
+
+    /* retro */
+    --retro-preview: #D85251;
+    --retro-bg-main: #F6F1E9;
+    --retro-bg-secondary: #F3E7DE;
+    --terto-bg-tertiary: #D5C9E8;
+
+    --retro-text-main: #2C2C2C;
+    --retro-text-secondary: #AE794B;
+    --retro-text-dim: #AFA9A5;
+    --retro-text-link: #D85251;
+    --retro-text-divider: #E4DBD2;
+
+
+
+    
+}
+
+/* themeing */
+
+
+[data-theme="light"]{
+    --bg-main: #FFFFFF;
+    --bg-secondary: #F3F4F6;
+    --bg-tertiary: #EDEFF2;
+
+    --text-main: #202122;
+    --text-secondary: #636C7E;
+    --text-dim: #B0B6C1;
+    --text-link: #5F96CD;
+    --text-link-hover: #4a749e;
+    --text-divider: #D3D5D9;
+
+}
+
+[data-theme="dark"]{
+    --bg-main: #191A1A;
+    --bg-secondary: #222222;
+    --bg-tertiary: #303030;
+
+    --text-main: #D9D9D9;
+    --text-secondary: #AEAEAE;
+    --text-dim: #8A8A8A;
+    --text-link: #5F96CD;
+    --text-link-hover: #4a749e;
+    --text-divider: #515151;
+
+}
+
+[data-theme="paper"]{
+    --bg-main: #F8F0E5;
+    --bg-tertiary: #EBDAC4;
+    --bg-secondary: #F4E8D7;
+
+    --text-main: #202122;
+    --text-secondary: #7E6D56;
+    --text-dim: #BDAD96;
+    --text-link: #5F96CD;
+    --text-link-hover: #4a749e;
+    --text-divider: #D1C0AA;
+
+}
+
+[data-theme="black"]{
+    --bg-main: #000000;
+    --bg-secondary: #141414;
+    --bg-tertiary: #2A2A2A;
+
+    --text-main: #B5B5B5;
+    --text-secondary: #D9D9D9;
+    --text-dim: #929292;
+    --text-link: #F9C84B;
+    --text-link-hover: #c49d3b;
+    --text-divider: #383838;
+
+}
+
+[data-theme="moon"]{
+    --bg-main: #282B38;
+    --bg-secondary: #343746;
+    --bg-tertiary: #3E4254;
+
+    --text-main: #D9D9D9;
+    --text-secondary: #BDC0CF;
+    --text-dim: #818698;
+    --text-link: #7B9BBA;
+    --text-link-hover: #5f7891;
+    --text-divider: #51576E;
+
+}
+
+[data-theme="sam"]{
+    --bg-main: #1B1337;
+    --bg-secondary: #F3CE4B;
+    --bg-tertiary: #3A2743;
+
+    --text-main: #E1E0DA;
+    --text-secondary: #F3CE4B;
+    --text-dim: #9E9E9E;
+    --text-link: #D75EBC;
+    --text-link-hover: #D75EBC;
+    --text-divider: #3B3161;
+
+}
+
+[data-theme="retro"]{
+    --bg-main: #F6F1E9;
+    --bg-secondary: #F3E7DE;
+    --bg-tertiary: #D5C9E8;
+
+    --text-main: #2C2C2C;
+    --text-secondary: #AE794B;
+    --text-dim: #AFA9A5;
+    --text-link: #D85251;
+    --text-divider: #E4DBD2;
+
+}
+
+body {
+    margin: 0px;
+    display: grid;
+    place-content: center;
+    background-color: var(--bg-main);
+}
+
+[class="bg-secondary"]{
+    background-color: var(--bg-secondary);
+}
+
+[class="bg-tertiary"]{
+    background-color: var(--bg-tertiary);
+}
+
+p {
+    color: var(--text-main);
+}
+
+p[class="text-secondary"]{
+    color: var(--text-secondary);
+}
+
+p[class="text-dim"]{
+    color: var(--text-dim);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-link);
+}
+
+a > p {
+    color: var(--text-link);
+}
+
+a:hover {
+    color: var(--text-link-hover);
+}
+
+a > p:hover {
+    color: var(--text-link-hover);
+}
+
+hr {
+    width: 100%;
+    height: 4px;
+    background-color: var(--text-divider);
+    box-shadow: none;
+    border: none;
+}
+
+svg {
+    color: var(--text-secondary);
+}
+
+.view360-canvas {
+    border-radius: 5px;
+}
+
+.view360-canvas:focus {
+    display: none;
+}
+
+header {
+    
+    position: sticky;
+    display: grid;
+    top: 0px;
+    margin: 0px;
+    width: 800px;
+    /*height: 100px;*/
+    z-index: 1;
+    background-color: var(--bg-main);
+    filter: blur(0px);
+    grid-template-columns: auto auto;
+    overflow-y: clip;
+
+
+}
+
+header > nav {
+    justify-self: start;
+    align-self: center;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style-type: none;
+
+}
+
+header img {
+    display: inline-block;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin: 0;
+}
+
+header svg {
+    display: inline-block;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin: 0;
+}
+
+.color-switcher-link {
+    display: none;
+}
+
+.color-switch-holder {
+    align-self: center;
+    justify-self: end;
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+
+
+#dark {
+    accent-color: var(--dark-preview);
+}
+
+#black {
+    accent-color: var(--black-preview);
+}
+
+#light {
+    accent-color: var(--light-preview);
+}
+
+#paper {
+    accent-color: var(--paper-preview);
+}
+
+#moon {
+    accent-color: var(--moon-preview);
+}
+
+#sam {
+    accent-color: var(--sam-preview);
+}
+
+#retro {
+    accent-color: var(--retro-preview)
+}
+
+h1 {
+    font-weight: bold;
+    color: var(--text-main);
+}
+
+h2 {
+    font-weight: bolder;
+    color: var(--text-main);
+}
+
+
+p {
+    line-height: 1.5;
+}
+
+.text-dim {
+    color: var(--text-dim);
+}
+
+.content-holder {
+    display: grid;
+    justify-content: center;
+}
+
+.content {
+    display: grid;
+    width: 800px;
+    
+}
+
+.content > img {
+    border-radius: 5px;
+    width: 100%
+}
+
+.intro {
+    justify-self: start;
+}
+
+.pre-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-content: center;
+    margin-top: 50px;
+}
+
+
+#spenden-tabelle {
+    padding: 20px;
+    border-radius: 5px;
+    border: 4px solid var(--text-divider);
+    display: table;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+td {
+    word-wrap: break-word;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    font-size: small;
+}
+
+
+
+@media screen and (max-width: 900px){
+
+    * {
+        font-size: 1rem;
+    }
+
+    header {
+        width: 95vw;
+    }
+
+    .content {
+        width: 95vw;
+    }
+
+    hr {
+        height: 2px;
+    }
+
+    /*
+    * {
+        display: none;
+    }
+        */
+}
+
+@media screen and (max-width: 700px) {
+    
+    .color-switch-holder {
+        display: none;
+    }
+
+    .color-switch-holder-2 {
+        display: flex;
+    }
+
+    .color-switcher-link {
+        display: block;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    #spenden-tabelle {
+        padding: 0px;
+    }
+    
+
+
+
+}
