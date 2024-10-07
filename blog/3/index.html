@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis's Website</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="shortcut icon" href="/static/assets/favicon.png" type="image/x-icon">
+    <script defer src="/static/js/index.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a class="link-one" href="/" >
+                        <img class="header-logo" src="/static/assets/pfp_cropped.png" alt="logo">
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    
+                </li>
+                <li>
+                    <a class="link-two" href="/blog">
+                        <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentColor" d="M192 32c0 17.7 14.3 32 32 32c123.7 0 224 100.3 224 224c0 17.7 14.3 32 32 32s32-14.3 32-32C512 128.9 383.1 0 224 0c-17.7 0-32 14.3-32 32zm0 96c0 17.7 14.3 32 32 32c70.7 0 128 57.3 128 128c0 17.7 14.3 32 32 32s32-14.3 32-32c0-106-86-192-192-192c-17.7 0-32 14.3-32 32zM96 144c0-26.5-21.5-48-48-48S0 117.5 0 144L0 368c0 79.5 64.5 144 144 144s144-64.5 144-144s-64.5-144-144-144l-16 0 0 96 16 0c26.5 0 48 21.5 48 48s-21.5 48-48 48s-48-21.5-48-48l0-224z"/></svg>
+                        <p>Blog</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-three" href="/projects/">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentColor" d="M413.5 237.5c-28.2 4.8-58.2-3.6-80-25.4l-38.1-38.1C280.4 159 272 138.8 272 117.6l0-12.1L192.3 62c-5.3-2.9-8.6-8.6-8.3-14.7s3.9-11.5 9.5-14l47.2-21C259.1 4.2 279 0 299.2 0l18.1 0c36.7 0 72 14 98.7 39.1l44.6 42c24.2 22.8 33.2 55.7 26.6 86L503 183l8-8c9.4-9.4 24.6-9.4 33.9 0l24 24c9.4 9.4 9.4 24.6 0 33.9l-88 88c-9.4 9.4-24.6 9.4-33.9 0l-24-24c-9.4-9.4-9.4-24.6 0-33.9l8-8-17.5-17.5zM27.4 377.1L260.9 182.6c3.5 4.9 7.5 9.6 11.8 14l38.1 38.1c6 6 12.4 11.2 19.2 15.7L134.9 484.6c-14.5 17.4-36 27.4-58.6 27.4C34.1 512 0 477.8 0 435.7c0-22.6 10.1-44.1 27.4-58.6z"/></svg>
+                        <p>Projects</p>
+                    </a>
+                </li>
+                <li class="color-switcher-link">
+                    <a class="link-four" href="#color-switcher-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentColor" d="M413.5 237.5c-28.2 4.8-58.2-3.6-80-25.4l-38.1-38.1C280.4 159 272 138.8 272 117.6l0-12.1L192.3 62c-5.3-2.9-8.6-8.6-8.3-14.7s3.9-11.5 9.5-14l47.2-21C259.1 4.2 279 0 299.2 0l18.1 0c36.7 0 72 14 98.7 39.1l44.6 42c24.2 22.8 33.2 55.7 26.6 86L503 183l8-8c9.4-9.4 24.6-9.4 33.9 0l24 24c9.4 9.4 9.4 24.6 0 33.9l-88 88c-9.4 9.4-24.6 9.4-33.9 0l-24-24c-9.4-9.4-9.4-24.6 0-33.9l8-8-17.5-17.5zM27.4 377.1L260.9 182.6c3.5 4.9 7.5 9.6 11.8 14l38.1 38.1c6 6 12.4 11.2 19.2 15.7L134.9 484.6c-14.5 17.4-36 27.4-58.6 27.4C34.1 512 0 477.8 0 435.7c0-22.6 10.1-44.1 27.4-58.6z"/></svg>
+                        <p>Theme</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--TODO: 
+        * automatische Erkennung von OS Theme
+        * Icons ändern in weiß, wenn dunkles theme
+        * Andere Buttons für mobile
+        * mobile Layout überarbeiten
+        * auf deutsche Seite kopieren
+        * CONTENT
+        * Farben fürlink hovern richtig
+        -->
+        
+        <div class="color-switch-holder" id="color-switcher">
+                <abbr title="Dark Theme"><input class="color-radio" type="radio" name="Dark Theme" id="dark" value="dark"></abbr>
+                <abbr title="Light Theme"><input class="color-radio" type="radio" name="Dark Theme" id="light" value="light"></abbr>
+                <abbr title="Paper Theme"><input class="color-radio" type="radio" name="Dark Theme" id="paper" value="paper"></abbr>            
+                <abbr title="Black Theme (OLED Display)"><input class="color-radio" type="radio" name="Dark Theme" id="black" value="black"></abbr>
+                <abbr title="Moon Theme"><input class="color-radio" type="radio" name="Dark Theme" id="moon" value="moon"></abbr>
+                <abbr title="Sam Theme"><input class="color-radio" type="radio" name="Dark Theme" id="sam" value="sam"></abbr>
+                <abbr title="Retro Theme"><input class="color-radio" type="radio" name="Dark Theme" id="retro" value="retro"></abbr>
+            
+
+            
+        </div>
+    </header>
+    
+    <div class="content-holder">
+        <div class="content">
+            <div id="start"></div>
+            <h1>Die Wanderung zu den Rock Pools</h1>
+            <hr>
+            <p>Willkommen zurück! Wie im letzten Artikel schon vorweggenommen waren wir mit Manu und Johanna noch wandern. Hongkong bietet sich hier mit seinen Bergen richtig gut an. Dies war mir (und ich denke auch vielen anderen) nicht bewusst. Unser Ziel waren die Rockpools, doch auf dem Weg ist so einiges passiert.
+            </p>
+            <p>Zu Beginn fuhren wir mit dem 99er Bus los und stiegen dann in den 94er Bus um. Natürlich stiegen wir eine Haltestelle zu früh aus und mussten die Strecke zur nächsten Haltestelle dann noch zusätzlich laufen 😅 Das Wetter war heiß und die Luftfeuchtigkeit hoch, aber wir kämpften uns vor. Der Weg war sehr gut ausgebaut und wir kamen schnell voran. Nach ca. 2 Stunden trafen wir auf unser erstes Zwischenziel: Den "Ham Tin" Strand. Dieser war wirklich sehr schön, das Wasser aber viel zu warm. Eine Abkühlung war das nicht 😐 Trotzdem war es der Weg definitiv wert. Die Aussicht war ZU gut und vor allem die Leere bei so einem schönen Strand war verblüffend. 
+            </p>
+            <figure>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7792.880164029666!2d114.36802782484135!3d22.40819268832063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34041060b2a08bc7%3A0x9de8f2c805cf31ff!2sHam%20Tin%20Beach!5e0!3m2!1sde!2sde!4v1728310840133!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <figcaption>
+                    <p class="text-dim date">Kartenübersicht</p>
+                </figcaption>
+            </figure>
+            <p>Nachdem wir wieder aus dem Meer herauskamen ging es weiter. So schlau wie ich bin habe ich meine Badehose am Strand vergessen 🤦
+                Naja...Beim weiteren Weg stieß ein Straßenhund auf uns, der uns ein ganzes Stück folgte. Wir tauften ihn Manni. 
+            </p>
+            <p>Manni zeigte uns wie ein Fremdenführer den Weg und wir konnten die phänomenalen Ausblicke genießen. 
+            </p>
+            <p>Nach weiteren 2-3 Kilometer kamen wir endlich bei den Rockpools an. Da es zu diesen keinen ausgebauten Weg gibt mussten wir teilweise klettern. Manni tat so als wäre er eine osmanische Bergziege und führte uns weiterhin bis wir endlich bei den Pools ankamen. Diese waren eine willkommene Abkühlung an diesem heißen Tag.  
+            </p>
+            <p>Da die Zeit schon vorangeschritten war, konnten wir uns dort leider nicht allzu lange aufhalten und mussten weiter. Am nächsten Küstendorf angekommen wollten wir uns eigentlich ein Boot chartern, welches uns dann zurück bringen sollte. Leider war das nicht möglich und so mussten wir am sehr späten Abend noch eine weitere Stunde ackern.
+            </p>
+            <p>Nach der schon genannten Stunde kamen wir am MacLehose Pavilion an. Geschafft machten wir eine kurze Pause und wollten anschließend ein Taxi rufen, dabei stellte sich nur ein Problem: Wir hatten kein Netz, und wir waren komplett alleine.
+                Außerdem war es schon dunkel. Ohne Netz war es uns zunächst unmöglich ein Taxi aus dem Regenwald zu rufen...jedoch passierte dann etwas sehr außergewöhnliches. Aus dem nichts fuhr ein volles Taxi vor, was schon etwas seltsam war, da der Pavilion am Ende einer langen Sackgassenstraße lag und hier niemand ausstieg. Der Taxifahrer drehte um und wollte schon wieder wegfahren, als er uns doch fragte, ob wir ein Taxi bräuchten. Wir waren zuerst Baff. Warum fährt der hier vorbei? Wie ist das jetzt passiert?
+            </p>
+            
+            <figure>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21732.96832940944!2d114.30482521389595!3d22.39234163442345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340405ed14390cf1%3A0xb7dd9286e504f346!2sMacLehose%20Trail%20Sec.1%20Pavilion!5e0!3m2!1sde!2sde!4v1728311306172!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <figcaption>
+                    <p class="text-dim date">Kartenübersicht</p>
+                </figcaption>
+            </figure>
+            <p>Unsere Erklärung: Von Gott gesendet. Nach 15 weiteren Minuten fuhr ein weiteres, das für uns gerufene, Taxi vor und wir konnten endlich fahren. Durch diese Fahrt sparten wir uns weitere 2 Stunden Marsch.
+            </p>
+            <p>Nach einer rasanten Taxifahrt kehrten wir noch bei Eras in seinem neu eröffneten Burgerladen ein. Wir durften ihn auch persönlich kennenlernen. Er kommt aus der Türkei und hat hier in Hongkong seinen eigenen Burgerladen eröffnet. Ich muss sagen, dass war einer der besten Burger die ich je gegessen habe.
+            </p>
+            <p>Mit diesem vollen Erfolg endete der Tag und wir fielen geschafft ins Bett. 
+            </p>
+            <p>Im nächsten Artikel werde ich von meiner Arbeit erzählen. Jetzt geht es richtig ran...</p>
+        
+    
+            <div class="pre-footer">
+                <hr>
+                <p>Ich lade euch gerne ein zu spenden. Durch die Spenden wird mein Auslandsaufenthalt mitfinanziert und es hilft dabei, dass auch in Zukunft dieses Freiwilligenprogramm angeboten werden kann.
+                </p>
+                <table id="spenden-tabelle">
+                    <tbody>
+                        <tr>
+                            <td><p>Kontoinhaber: </p></td>
+                            <td><p>CVJM-Landesverband Bayern e.V.</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>IBAN:</p></td>
+                            <td><p>DE10 5206 0410 0005 3645 07</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>BIC:</p></td>
+                            <td><p>GENODEF1EK1</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Verwendungszweck:</p></td>
+                            <td><p>Luis Herzog ODER Weltweit China, [Adresse des Spenders]</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+
+                <div class="color-switch-holder color-switch-holder-2" id="color-switcher-2">
+                    <abbr title="Dark Theme"><input class="color-radio" type="radio" name="Dark Theme" id="dark" value="dark"></abbr>
+                    <abbr title="Light Theme"><input class="color-radio" type="radio" name="Dark Theme" id="light" value="light"></abbr>
+                    <abbr title="Paper Theme"><input class="color-radio" type="radio" name="Dark Theme" id="paper" value="paper"></abbr>            
+                    <abbr title="Black Theme (OLED Display)"><input class="color-radio" type="radio" name="Dark Theme" id="black" value="black"></abbr>
+                    <abbr title="Moon Theme"><input class="color-radio" type="radio" name="Dark Theme" id="moon" value="moon"></abbr>
+                    <abbr title="Sam Theme"><input class="color-radio" type="radio" name="Dark Theme" id="sam" value="sam"></abbr>
+                    <abbr title="Retro Theme"><input class="color-radio" type="radio" name="Dark Theme" id="retro" value="retro"></abbr>
+                
+                </div>
+                <a href="#start" class="flex-center">
+                    <p>Back to Top</p>
+
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <hr>
+        <p class="text-dim">© 2024 luisherzog.de</p>
+    </footer>
+</body>
+</html>

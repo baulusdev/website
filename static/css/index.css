@@ -362,6 +362,10 @@ header svg {
     accent-color: var(--retro-preview)
 }
 
+.date {
+    font-size: smaller;
+}
+
 h1 {
     font-weight: bold;
     color: var(--text-main);
@@ -371,7 +375,6 @@ h2 {
     font-weight: bolder;
     color: var(--text-main);
 }
-
 
 p {
     line-height: 1.5;
@@ -392,9 +395,19 @@ p {
     
 }
 
-.content > img {
+.content img {
     border-radius: 5px;
     width: 100%
+}
+
+.content iframe {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.content video {
+    border-radius: 5px;
+    width: 100%;
 }
 
 .intro {
@@ -461,15 +474,13 @@ footer p {
     hr {
         height: 2px;
     }
-
-    /*
-    * {
-        display: none;
-    }
-        */
 }
 
 @media screen and (max-width: 700px) {
+    
+    * {
+        font-size: 0.7rem;
+    }
     
     .color-switch-holder {
         display: none;

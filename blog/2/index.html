@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis's Website</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="shortcut icon" href="/static/assets/favicon.png" type="image/x-icon">
+    <script defer src="/static/js/index.js"></script>
+
+  <!-- Load View 360 using script tags -->
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a class="link-one" href="/" >
+                        <img class="header-logo" src="/static/assets/pfp_cropped.png" alt="logo">
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    
+                </li>
+                <li>
+                    <a class="link-two" href="/blog/">
+                        <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentColor" d="M192 32c0 17.7 14.3 32 32 32c123.7 0 224 100.3 224 224c0 17.7 14.3 32 32 32s32-14.3 32-32C512 128.9 383.1 0 224 0c-17.7 0-32 14.3-32 32zm0 96c0 17.7 14.3 32 32 32c70.7 0 128 57.3 128 128c0 17.7 14.3 32 32 32s32-14.3 32-32c0-106-86-192-192-192c-17.7 0-32 14.3-32 32zM96 144c0-26.5-21.5-48-48-48S0 117.5 0 144L0 368c0 79.5 64.5 144 144 144s144-64.5 144-144s-64.5-144-144-144l-16 0 0 96 16 0c26.5 0 48 21.5 48 48s-21.5 48-48 48s-48-21.5-48-48l0-224z"/></svg>
+                        <p>Blog</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-three" href="/projects/">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentColor" d="M413.5 237.5c-28.2 4.8-58.2-3.6-80-25.4l-38.1-38.1C280.4 159 272 138.8 272 117.6l0-12.1L192.3 62c-5.3-2.9-8.6-8.6-8.3-14.7s3.9-11.5 9.5-14l47.2-21C259.1 4.2 279 0 299.2 0l18.1 0c36.7 0 72 14 98.7 39.1l44.6 42c24.2 22.8 33.2 55.7 26.6 86L503 183l8-8c9.4-9.4 24.6-9.4 33.9 0l24 24c9.4 9.4 9.4 24.6 0 33.9l-88 88c-9.4 9.4-24.6 9.4-33.9 0l-24-24c-9.4-9.4-9.4-24.6 0-33.9l8-8-17.5-17.5zM27.4 377.1L260.9 182.6c3.5 4.9 7.5 9.6 11.8 14l38.1 38.1c6 6 12.4 11.2 19.2 15.7L134.9 484.6c-14.5 17.4-36 27.4-58.6 27.4C34.1 512 0 477.8 0 435.7c0-22.6 10.1-44.1 27.4-58.6z"/></svg>
+                        <p>Projects</p>
+                    </a>
+                </li>
+                <li class="color-switcher-link">
+                    <a class="link-four" href="#color-switcher-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentColor" d="M413.5 237.5c-28.2 4.8-58.2-3.6-80-25.4l-38.1-38.1C280.4 159 272 138.8 272 117.6l0-12.1L192.3 62c-5.3-2.9-8.6-8.6-8.3-14.7s3.9-11.5 9.5-14l47.2-21C259.1 4.2 279 0 299.2 0l18.1 0c36.7 0 72 14 98.7 39.1l44.6 42c24.2 22.8 33.2 55.7 26.6 86L503 183l8-8c9.4-9.4 24.6-9.4 33.9 0l24 24c9.4 9.4 9.4 24.6 0 33.9l-88 88c-9.4 9.4-24.6 9.4-33.9 0l-24-24c-9.4-9.4-9.4-24.6 0-33.9l8-8-17.5-17.5zM27.4 377.1L260.9 182.6c3.5 4.9 7.5 9.6 11.8 14l38.1 38.1c6 6 12.4 11.2 19.2 15.7L134.9 484.6c-14.5 17.4-36 27.4-58.6 27.4C34.1 512 0 477.8 0 435.7c0-22.6 10.1-44.1 27.4-58.6z"/></svg>
+                        <p>Theme</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--TODO: 
+        * automatische Erkennung von OS Theme
+        * Icons ändern in weiß, wenn dunkles theme
+        * Andere Buttons für mobile
+        * mobile Layout überarbeiten
+        * auf deutsche Seite kopieren
+        * CONTENT
+        * Farben fürlink hovern richtig
+        -->
+        
+        <div class="color-switch-holder" id="color-switcher">
+                <abbr title="Dark Theme"><input class="color-radio" type="radio" name="Dark Theme" id="dark" value="dark"></abbr>
+                <abbr title="Light Theme"><input class="color-radio" type="radio" name="Dark Theme" id="light" value="light"></abbr>
+                <abbr title="Paper Theme"><input class="color-radio" type="radio" name="Dark Theme" id="paper" value="paper"></abbr>            
+                <abbr title="Black Theme (OLED Display)"><input class="color-radio" type="radio" name="Dark Theme" id="black" value="black"></abbr>
+                <abbr title="Moon Theme"><input class="color-radio" type="radio" name="Dark Theme" id="moon" value="moon"></abbr>
+                <abbr title="Sam Theme"><input class="color-radio" type="radio" name="Dark Theme" id="sam" value="sam"></abbr>
+                <abbr title="Retro Theme"><input class="color-radio" type="radio" name="Dark Theme" id="retro" value="retro"></abbr>
+            
+
+            
+        </div>
+    </header>
+    
+    <div class="content-holder">
+        <div class="content">
+            <div id="start"></div>
+            <h1>Die "Einfühlungswoche"</h1>
+            <hr>
+            <p>So, da melde ich mich wieder! Beim letzen mal habe ich mit dem Cliffhanger aufgehört. Jetzt geht es um die erste Einfühlungswoche bevor wir richtig arbeiten müssen.</p>
+            <h2>Der zweite Tag</h2>
+            <hr>
+            <p>Nach einem mehr oder weniger erholsamen Schlaf lernten wir unsere Mitbewohner kennen. Mit uns wohnen noch zwei Kolumbianische Freiwillige (David und Tatiana) in der WG. 
+            </p>
+            <p>
+                Da uns der Magen brummte führte uns Tobi direkt am zweiten Tag in den "Wet-Market". Das war wirklich eine grandiose Erfahrung. Ich kann es gar nicht richtig in Worte fassen, wie es mir erging. Dort wird ALLES angeboten. Frische, noch lebende Fische, Gemüse, jegliches Obst und noch viele weitere Produkte und Köstlichkeiten. 
+                <br>
+                Der Boden in diesem Marktist wie der Name schon sagt "wet" (Nass), und da dieser Markt unterirdisch ist hielt sich auch ein spezieller Geruch. Überall waren laute Stimmen zu hören, da wirklich viele Menschen da waren. Wir ließen uns davon aber nicht allzu sehr stören und genossen unser Frühstück. Wir waren in einem lokalen Frühstücksladen. Ich bestellte mir "Dumplings", welche vorzüglich schmeckten. Dazu gab es einen kalten Milchtee. 
+            </p>
+            <figure>
+                <img src="pictures/wet-market_1.jpg" alt="" width="800px">
+                <figcaption>
+                    <p class="text-dim date">Der Wetmarket</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="pictures/wet-market_2.jpg" alt="" width="800px">
+                <figcaption>
+                    <p class="text-dim date">Der Wetmarket</p>
+                </figcaption>
+            </figure>
+
+            <p>Gestärkt gingen wir anschließend in die Mall, um unseren Kühlschrank zu füllen und spazierten noch etwas umher, um die Umgebung zu erkunden. 
+            </p>
+
+            
+            <h2>Weitere Erlebnisse</h2>
+            <p>Ab hier verschwimmen die Tage etwas ineinander, da wir uns aufgrund des Jetlags noch an die Zeit anpassen mussten und noch nicht dem Hongkonger Tagesrhythmus folgten. 
+            </p>
+            <p>Wir hatten tägliche Online-Meetings mit Mario (unserer Kontaktperson in Deutschland), um uns besser in die Kultur einzufinden, wobei wir auch mehr Zeit im inneren unserer 4 Wänden verbringen mussten, da die Taifunwarnstufe 8 herausgegeben wurde. Das heißt, dass alle Geschäfte geschlossen sind (auch Schulen) und wir draußen nichts unternehmen konnten. Wir haben bei uns im Stadtteil aber keine starken Winde abbekommen, wobei doch einige Äste von Bäumen gerissen wurden.</p>
+            <p>Als die Warnstufe gelockert wurde wagten wir uns auch wieder nach draußen und lernten kurz darauf Manu und Johanna kennen. Johanna war 2019/20 Freiwillige in Hongkong. Zusammen mit Tobi und unseren neuen Bekannten machten wir uns auf nach "Mongkok" welcher ein Stadtteil im Zentrum von Hongkong ist. Die MTR (U-Bahn) ist in Hongkong wirklich sensationell ausgebaut, sodass wir sehr schnell in Mongkok ankamen. In dem Restaurant, wo wir eigentlich essen wollten gab es leider keinen Platz mehr, aber wir konnten woanders vor dem anhaltenden Regen Unterhschlupf finden und ein traditionelles Abendessen genießen.
+            </p>
+            <figure>
+                <img src="pictures/essen.jpg" alt="" width="800px">
+                <figcaption>
+                    <p class="text-dim date">Lecker 😋</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="pictures/essen-selfie.jpg" alt="" width="800px">
+                <figcaption>
+                    <p class="text-dim date">Alle Leute die dabei waren</p>
+                </figcaption>
+            </figure>
+            <p>Die Tage drauf besuchten wir mit Sally die Center, in denen wir arbeiten würden. Diese bieten verschiedene Programme für Kinder, Jugendliche und Erwachsene an. Ich arbeite im Kornhill Center, in der YMCA Primary School und im YMCA College, sowie an Sonntagen in der deutschen Gemeinde. Diese Einrichtungen werde ich in Zukunft nochmal genau vorstellen.
+            </p>
+            <p>Trotzdem hatten wir noch freie Tage zwischendurch und konnten weiter Hongkong erkunden. Tobi verließ uns leider, da er wieder nach Peking musste, aber Manu und Johanna blieben noch einige Tage. Somit konnten wie mit ihnen die "Lee Tung St" Gasse erkunden und den Glasaufzug vom Hopewell Center fahren. Der Ausblick war phänomenal!
+            </p>
+            <figure>
+                <img src="pictures/lee-tung-st.jpg" alt="" width="800px">
+                <figcaption>
+                    <p class="text-dim date">Die Lee Tung St.</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="pictures/glasaufzug-skyline.jpg" alt="" width="800px">
+                <figcaption>
+                    <p class="text-dim date">Die aus dem Aufzug ersichtliche Skyline</p>
+                </figcaption>
+            </figure>
+
+            <p>Außerdem gingen wir auf eine wundervolle Wanderung. Von der werde ich aber erst im nächsten Artikel berichten. Bleibt also gespannt!
+                <br>
+            Bis dahin! 👋
+            </p>
+            <figure>
+                <video src="pictures/glasaufzug_video.mp4" controls width="800px" muted></video>
+                <figcaption>
+                    <p class="text-dim date">Die komplette Aufzugfahrt</p>
+                </figcaption>
+            </figure>
+
+            
+
+
+            <div class="pre-footer">
+                <p>Wenn ihr in Zukunft per E-Mail über das Erscheinen eines neuen Blog-Artikels informiert werden wollt, dann lasst mich das gerne unter <a href="mailto:newsletter@luisherzog.de">newsletter@luisherzog.de</a> wissen. Anschließend werdet ihr in die E-Mail Liste aufgenommen.</p>
+                <hr>
+                <p>Ich lade euch gerne ein zu spenden. Durch die Spenden wird mein Auslandsaufenthalt mitfinanziert und es hilft dabei, dass auch in Zukunft dieses Freiwilligenprogramm angeboten werden kann.</p>
+                <table id="spenden-tabelle">
+                    <tbody>
+                        <tr>
+                            <td><p>Kontoinhaber: </p></td>
+                            <td><p>CVJM-Landesverband Bayern e.V.</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>IBAN:</p></td>
+                            <td><p>DE10 5206 0410 0005 3645 07</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>BIC:</p></td>
+                            <td><p>GENODEF1EK1</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Verwendungszweck:</p></td>
+                            <td><p>Luis Herzog ODER Weltweit China, [Adresse des Spenders]</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+
+                <div class="color-switch-holder color-switch-holder-2" id="color-switcher-2">
+                    <abbr title="Dark Theme"><input class="color-radio" type="radio" name="Dark Theme" id="dark" value="dark"></abbr>
+                    <abbr title="Light Theme"><input class="color-radio" type="radio" name="Dark Theme" id="light" value="light"></abbr>
+                    <abbr title="Paper Theme"><input class="color-radio" type="radio" name="Dark Theme" id="paper" value="paper"></abbr>            
+                    <abbr title="Black Theme (OLED Display)"><input class="color-radio" type="radio" name="Dark Theme" id="black" value="black"></abbr>
+                    <abbr title="Moon Theme"><input class="color-radio" type="radio" name="Dark Theme" id="moon" value="moon"></abbr>
+                    <abbr title="Sam Theme"><input class="color-radio" type="radio" name="Dark Theme" id="sam" value="sam"></abbr>
+                    <abbr title="Retro Theme"><input class="color-radio" type="radio" name="Dark Theme" id="retro" value="retro"></abbr>
+                
+                </div>
+                <a href="#start" class="flex-center">
+                    <p>Back to Top</p>
+
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
