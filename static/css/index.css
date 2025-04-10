@@ -331,18 +331,10 @@ header svg {
     margin: 0;
 }
 
-.color-switcher-link {
-    display: none;
-}
-
 .color-switch-holder {
     align-self: center;
     justify-self: end;
-    display: flex;
-    justify-content: end;
-    gap: 15px;
 }
-
 
 #dark {
     accent-color: var(--dark-preview);
@@ -388,6 +380,32 @@ h2 {
 
 p {
     line-height: 1.5;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--bg-main);
+    border-radius: 5px;
+    
+}
+
+button:hover {
+    background-color: var(--bg-secondary);
+    cursor: pointer;
+}
+
+button:focus {
+    border-color: var(--text-dim);
+}
+
+.color-switch-button {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-color: red;
+    border-width: 10px;
 }
 
 .text-dim {
@@ -495,24 +513,6 @@ footer p {
     
     * {
         font-size: 0.7rem;
-    }
-    
-    .color-switch-holder {
-        display: none;
-    }
-
-    .color-switch-holder-2 {
-        display: flex;
-    }
-
-    .color-switcher-link {
-        display: block;
-    }
-    
-    header {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
     }
 
     #spenden-tabelle {

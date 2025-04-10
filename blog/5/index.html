@@ -6,7 +6,7 @@
     <title>Update</title>
     <link rel="stylesheet" href="../../static/css/index.css">
     <link rel="shortcut icon" href="../../static/assets/favicon.png" type="image/x-icon">
-    <script defer src="../../static/js/index.js"></script>
+    <script defer src="../../static/js/theme.js"></script>
 
 
 </head>
@@ -21,9 +21,6 @@
                     </a>
                 </li>
                 <li>
-                    
-                </li>
-                <li>
                     <a class="link-two" href="../../blog/">
                         <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentColor" d="M192 32c0 17.7 14.3 32 32 32c123.7 0 224 100.3 224 224c0 17.7 14.3 32 32 32s32-14.3 32-32C512 128.9 383.1 0 224 0c-17.7 0-32 14.3-32 32zm0 96c0 17.7 14.3 32 32 32c70.7 0 128 57.3 128 128c0 17.7 14.3 32 32 32s32-14.3 32-32c0-106-86-192-192-192c-17.7 0-32 14.3-32 32zM96 144c0-26.5-21.5-48-48-48S0 117.5 0 144L0 368c0 79.5 64.5 144 144 144s144-64.5 144-144s-64.5-144-144-144l-16 0 0 96 16 0c26.5 0 48 21.5 48 48s-21.5 48-48 48s-48-21.5-48-48l0-224z"/></svg>
                         <p>Blog</p>
@@ -35,34 +32,13 @@
                         <p>Projekte</p>
                     </a>
                 </li>
-                <li class="color-switcher-link">
-                    <a class="link-four" href="#color-switcher-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentColor" d="M413.5 237.5c-28.2 4.8-58.2-3.6-80-25.4l-38.1-38.1C280.4 159 272 138.8 272 117.6l0-12.1L192.3 62c-5.3-2.9-8.6-8.6-8.3-14.7s3.9-11.5 9.5-14l47.2-21C259.1 4.2 279 0 299.2 0l18.1 0c36.7 0 72 14 98.7 39.1l44.6 42c24.2 22.8 33.2 55.7 26.6 86L503 183l8-8c9.4-9.4 24.6-9.4 33.9 0l24 24c9.4 9.4 9.4 24.6 0 33.9l-88 88c-9.4 9.4-24.6 9.4-33.9 0l-24-24c-9.4-9.4-9.4-24.6 0-33.9l8-8-17.5-17.5zM27.4 377.1L260.9 182.6c3.5 4.9 7.5 9.6 11.8 14l38.1 38.1c6 6 12.4 11.2 19.2 15.7L134.9 484.6c-14.5 17.4-36 27.4-58.6 27.4C34.1 512 0 477.8 0 435.7c0-22.6 10.1-44.1 27.4-58.6z"/></svg>
-                        <p>Theme</p>
-                    </a>
-                </li>
             </ul>
         </nav>
-        <!--TODO: 
-        * automatische Erkennung von OS Theme
-        * Icons ändern in weiß, wenn dunkles theme
-        * Andere Buttons für mobile
-        * mobile Layout überarbeiten
-        * auf deutsche Seite kopieren
-        * CONTENT
-        * Farben fürlink hovern richtig
-        -->
         
-        <div class="color-switch-holder" id="color-switcher">
-                <abbr title="Dark Theme"><input class="color-radio" type="radio" name="Dark Theme" id="dark" value="dark"></abbr>
-                <abbr title="Light Theme"><input class="color-radio" type="radio" name="Dark Theme" id="light" value="light"></abbr>
-                <abbr title="Paper Theme"><input class="color-radio" type="radio" name="Dark Theme" id="paper" value="paper"></abbr>            
-                <abbr title="Black Theme (OLED Display)"><input class="color-radio" type="radio" name="Dark Theme" id="black" value="black"></abbr>
-                <abbr title="Moon Theme"><input class="color-radio" type="radio" name="Dark Theme" id="moon" value="moon"></abbr>
-                <abbr title="Sam Theme"><input class="color-radio" type="radio" name="Dark Theme" id="sam" value="sam"></abbr>
-                <abbr title="Retro Theme"><input class="color-radio" type="radio" name="Dark Theme" id="retro" value="retro"></abbr>
-            
-
+        <div class="color-switch-holder">
+            <button class="color-switch-button" id="color-switch-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
+            </button>
             
         </div>
     </header>
@@ -159,16 +135,6 @@
                 </table>
                 <br>
 
-                <div class="color-switch-holder color-switch-holder-2" id="color-switcher-2">
-                    <abbr title="Dark Theme"><input class="color-radio" type="radio" name="Dark Theme" id="dark" value="dark"></abbr>
-                    <abbr title="Light Theme"><input class="color-radio" type="radio" name="Dark Theme" id="light" value="light"></abbr>
-                    <abbr title="Paper Theme"><input class="color-radio" type="radio" name="Dark Theme" id="paper" value="paper"></abbr>            
-                    <abbr title="Black Theme (OLED Display)"><input class="color-radio" type="radio" name="Dark Theme" id="black" value="black"></abbr>
-                    <abbr title="Moon Theme"><input class="color-radio" type="radio" name="Dark Theme" id="moon" value="moon"></abbr>
-                    <abbr title="Sam Theme"><input class="color-radio" type="radio" name="Dark Theme" id="sam" value="sam"></abbr>
-                    <abbr title="Retro Theme"><input class="color-radio" type="radio" name="Dark Theme" id="retro" value="retro"></abbr>
-                
-                </div>
                 <a href="#start" class="flex-center">
                     <p>Back to Top</p>
 
@@ -177,7 +143,7 @@
         </div>
     </div>
     <footer>
-        <p class="text-dim">© 2024 luisherzog.de</p>
+        <p class="text-dim">© 2025 luisherzog.de</p>
     </footer>
 </body>
 </html>

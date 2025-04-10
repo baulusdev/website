@@ -1,5 +1,5 @@
 
-const viewer = new View360("#viewer", {
+/*const viewer = new View360("#viewer", {
     projection: new View360.EquirectProjection({
       src: "/path/to/file",
       video: false
@@ -16,3 +16,5 @@ const viewer = new View360("#viewer", {
       }
     })
   });
+
+  */
